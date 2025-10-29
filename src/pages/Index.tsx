@@ -138,8 +138,12 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover-scale">
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <Icon name="Cpu" className="text-primary" size={64} />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/313225a5-5706-4c4b-899a-18b7930ccca5.jpg" 
+                  alt="Станки с ЧПУ" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <CardHeader>
                 <CardTitle>Станки с ЧПУ</CardTitle>
@@ -156,8 +160,12 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden hover-scale">
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <Icon name="Cog" className="text-primary" size={64} />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/f87b6c82-0021-45db-8e5d-e7e901dd9219.jpg" 
+                  alt="Насосное оборудование" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <CardHeader>
                 <CardTitle>Насосное оборудование</CardTitle>
@@ -174,8 +182,12 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden hover-scale">
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <Icon name="Zap" className="text-primary" size={64} />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/243f554a-ffe2-496a-b54e-00e693501ca6.jpg" 
+                  alt="Электрооборудование" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <CardHeader>
                 <CardTitle>Электрооборудование</CardTitle>

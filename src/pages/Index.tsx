@@ -143,17 +143,17 @@ const Index = () => {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
-                  alt="Дробилки ДКС" 
+                  alt="Решетки-дробилки" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle>Дробилки ДКС</CardTitle>
-                <CardDescription>Промышленное дробильное оборудование</CardDescription>
+                <CardTitle>Решетки-дробилки</CardTitle>
+                <CardDescription>Оборудование для очистки сточных вод</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Высокопроизводительные дробилки для переработки различных материалов
+                  Канализационные дробилки и решетки для измельчения твердых включений
                 </p>
                 <Button 
                   variant="outline" 
@@ -417,17 +417,17 @@ const Index = () => {
       </footer>
 
       <Dialog open={showDksDetails} onOpenChange={setShowDksDetails}>
-        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-3xl">Дробилки ДКС</DialogTitle>
-            <DialogDescription>Промышленное дробильное оборудование высокой производительности</DialogDescription>
+            <DialogTitle className="text-3xl">Решетки-дробилки</DialogTitle>
+            <DialogDescription>Оборудование для очистки сточных вод и измельчения твердых включений</DialogDescription>
           </DialogHeader>
           
           <div className="space-y-6 mt-4">
             <div>
               <img 
                 src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
-                alt="Дробилки ДКС" 
+                alt="Решетки-дробилки" 
                 className="w-full h-64 object-cover rounded-lg"
               />
             </div>
@@ -435,109 +435,118 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Описание</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Дробилки серии ДКС предназначены для измельчения различных материалов в промышленных масштабах. 
-                Оборудование отличается высокой производительностью, надежностью и долговечностью. 
-                Применяется в горнодобывающей, строительной, химической и других отраслях промышленности.
+                Решетки-дробилки предназначены для механической очистки сточных вод от крупных твердых включений 
+                с одновременным их измельчением. Оборудование широко применяется на очистных сооружениях, 
+                канализационных насосных станциях и промышленных предприятиях.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">Технические характеристики</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card>
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-base flex items-center">
-                      <Icon name="Gauge" className="mr-2 text-primary" size={20} />
-                      Производительность
+              <h3 className="text-xl font-semibold mb-4">Ассортимент оборудования</h3>
+              <div className="grid grid-cols-1 gap-4">
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center text-lg">
+                      <Icon name="Settings" className="mr-2 text-primary" size={24} />
+                      Дробилка канализационная ДКС
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">До 500 т/ч</p>
+                    <p className="text-sm text-muted-foreground">
+                      Предназначена для установки в канализационные колодцы. Измельчает твердые включения 
+                      непосредственно в потоке сточных вод. Производительность до 200 м³/ч.
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-base flex items-center">
-                      <Icon name="Zap" className="mr-2 text-primary" size={20} />
-                      Мощность двигателя
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center text-lg">
+                      <Icon name="Cog" className="mr-2 text-primary" size={24} />
+                      Мацераторы
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">55-250 кВт</p>
+                    <p className="text-sm text-muted-foreground">
+                      Компактные дробильные установки для бытовых и промышленных стоков. 
+                      Эффективно измельчают органические и неорганические включения. Мощность от 1,5 до 15 кВт.
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-base flex items-center">
-                      <Icon name="Maximize" className="mr-2 text-primary" size={20} />
-                      Размер загрузки
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center text-lg">
+                      <Icon name="Wrench" className="mr-2 text-primary" size={24} />
+                      Дробилки канализационные на трубу
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">До 1200 мм</p>
+                    <p className="text-sm text-muted-foreground">
+                      Встраиваются непосредственно в трубопровод DN 100-400. Автоматический режим работы 
+                      с системой самоочистки. Защита от перегрузок и заклинивания.
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-base flex items-center">
-                      <Icon name="Minimize" className="mr-2 text-primary" size={20} />
-                      Размер на выходе
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center text-lg">
+                      <Icon name="Grid3x3" className="mr-2 text-primary" size={24} />
+                      Решетка-дробилка РД-600
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">10-350 мм</p>
+                    <p className="text-sm text-muted-foreground">
+                      Для каналов шириной 600 мм. Производительность до 500 м³/ч. 
+                      Совмещает функции механической решетки и дробилки. Мощность привода 5,5 кВт.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center text-lg">
+                      <Icon name="Grid3x3" className="mr-2 text-primary" size={24} />
+                      Решетка-дробилка РД-200
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      Компактная модель для каналов 200 мм. Производительность до 150 м³/ч. 
+                      Идеально подходит для небольших КНС и локальных очистных сооружений. Мощность 2,2 кВт.
+                    </p>
                   </CardContent>
                 </Card>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">Преимущества</h3>
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-muted-foreground">Высокая степень дробления и производительность</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-muted-foreground">Надежная конструкция с усиленными узлами</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-muted-foreground">Низкие эксплуатационные расходы</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-muted-foreground">Простота обслуживания и замены деталей</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-muted-foreground">Система защиты от перегрузок</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Области применения</h3>
+              <h3 className="text-xl font-semibold mb-3">Преимущества оборудования</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Icon name="CircleDot" className="text-primary" size={16} />
-                  <span>Горнодобывающая промышленность</span>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Защита насосов от засорения и поломок</p>
                 </div>
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Icon name="CircleDot" className="text-primary" size={16} />
-                  <span>Производство стройматериалов</span>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Автоматический режим работы</p>
                 </div>
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Icon name="CircleDot" className="text-primary" size={16} />
-                  <span>Переработка отходов</span>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Низкие эксплуатационные затраты</p>
                 </div>
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Icon name="CircleDot" className="text-primary" size={16} />
-                  <span>Химическая промышленность</span>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Компактные размеры</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Простое обслуживание</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm text-muted-foreground">Долговечная конструкция</p>
                 </div>
               </div>
             </div>

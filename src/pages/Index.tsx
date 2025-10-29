@@ -3,10 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [showDksDetails, setShowDksDetails] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -153,7 +155,11 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Высокопроизводительные дробилки для переработки различных материалов
                 </p>
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => setShowDksDetails(true)}
+                >
                   Подробнее
                 </Button>
               </CardContent>
@@ -409,6 +415,149 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      <Dialog open={showDksDetails} onOpenChange={setShowDksDetails}>
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl">Дробилки ДКС</DialogTitle>
+            <DialogDescription>Промышленное дробильное оборудование высокой производительности</DialogDescription>
+          </DialogHeader>
+          
+          <div className="space-y-6 mt-4">
+            <div>
+              <img 
+                src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
+                alt="Дробилки ДКС" 
+                className="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Описание</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Дробилки серии ДКС предназначены для измельчения различных материалов в промышленных масштабах. 
+                Оборудование отличается высокой производительностью, надежностью и долговечностью. 
+                Применяется в горнодобывающей, строительной, химической и других отраслях промышленности.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Технические характеристики</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center">
+                      <Icon name="Gauge" className="mr-2 text-primary" size={20} />
+                      Производительность
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">До 500 т/ч</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center">
+                      <Icon name="Zap" className="mr-2 text-primary" size={20} />
+                      Мощность двигателя
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">55-250 кВт</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center">
+                      <Icon name="Maximize" className="mr-2 text-primary" size={20} />
+                      Размер загрузки
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">До 1200 мм</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center">
+                      <Icon name="Minimize" className="mr-2 text-primary" size={20} />
+                      Размер на выходе
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">10-350 мм</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Преимущества</h3>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-muted-foreground">Высокая степень дробления и производительность</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-muted-foreground">Надежная конструкция с усиленными узлами</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-muted-foreground">Низкие эксплуатационные расходы</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-muted-foreground">Простота обслуживания и замены деталей</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-muted-foreground">Система защиты от перегрузок</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Области применения</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Icon name="CircleDot" className="text-primary" size={16} />
+                  <span>Горнодобывающая промышленность</span>
+                </div>
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Icon name="CircleDot" className="text-primary" size={16} />
+                  <span>Производство стройматериалов</span>
+                </div>
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Icon name="CircleDot" className="text-primary" size={16} />
+                  <span>Переработка отходов</span>
+                </div>
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Icon name="CircleDot" className="text-primary" size={16} />
+                  <span>Химическая промышленность</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-4">
+              <Button 
+                className="w-full" 
+                size="lg"
+                onClick={() => {
+                  setShowDksDetails(false);
+                  scrollToSection('contacts');
+                }}
+              >
+                <Icon name="Phone" className="mr-2" size={20} />
+                Получить консультацию
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

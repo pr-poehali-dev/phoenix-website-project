@@ -142,7 +142,7 @@ const Index = () => {
             <Card className="overflow-hidden hover-scale">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
+                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/6dd56be1-3258-414e-9ce3-b46f626e0b20.jpg" 
                   alt="Решетки-дробилки" 
                   className="w-full h-full object-cover"
                 />
@@ -426,7 +426,7 @@ const Index = () => {
           <div className="space-y-6 mt-4">
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
+                src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/6dd56be1-3258-414e-9ce3-b46f626e0b20.jpg" 
                 alt="Решетки-дробилки" 
                 className="w-full h-64 object-cover rounded-lg"
               />

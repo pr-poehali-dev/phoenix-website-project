@@ -140,7 +140,7 @@ const Index = () => {
             <Card className="overflow-hidden hover-scale">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/313225a5-5706-4c4b-899a-18b7930ccca5.jpg" 
+                  src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/8918ef48-b47a-47c6-8599-bf952684bd0f.jpg" 
                   alt="Дробилки ДКС" 
                   className="w-full h-full object-cover"
                 />

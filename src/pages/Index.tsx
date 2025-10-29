@@ -169,17 +169,17 @@ const Index = () => {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/f87b6c82-0021-45db-8e5d-e7e901dd9219.jpg" 
-                  alt="Насосное оборудование" 
+                  alt="Механические решетки" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle>Насосное оборудование</CardTitle>
-                <CardDescription>Промышленные насосы и системы перекачки</CardDescription>
+                <CardTitle>Механические решетки</CardTitle>
+                <CardDescription>Оборудование для очистки сточных вод</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Центробежные, винтовые и поршневые насосы для любых задач
+                  Решетки для задержания крупных загрязнений в сточных водах
                 </p>
                 <Button variant="outline" className="w-full">
                   Подробнее

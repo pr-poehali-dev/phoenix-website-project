@@ -141,17 +141,17 @@ const Index = () => {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://cdn.poehali.dev/projects/174139f1-2315-4100-80b2-2b1139ba1907/files/313225a5-5706-4c4b-899a-18b7930ccca5.jpg" 
-                  alt="Станки с ЧПУ" 
+                  alt="Дробилки ДКС" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle>Станки с ЧПУ</CardTitle>
-                <CardDescription>Высокоточное металлообрабатывающее оборудование</CardDescription>
+                <CardTitle>Дробилки ДКС</CardTitle>
+                <CardDescription>Промышленное дробильное оборудование</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Фрезерные, токарные и многофункциональные станки ведущих производителей
+                  Высокопроизводительные дробилки для переработки различных материалов
                 </p>
                 <Button variant="outline" className="w-full">
                   Подробнее
